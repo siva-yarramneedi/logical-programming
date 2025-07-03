@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static int checkBirthdate(String month, int date){
+        if(month.equalsIgnoreCase("July") && date==5){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String month = scanner.next();
+        int date = scanner.nextInt();
+        System.out.println(checkBirthdate(month, date));
+        scanner.close();
+    }
+}
